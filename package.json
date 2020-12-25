@@ -8,6 +8,9 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "dev": "lerna run dev --stream"
+    "dev": "lerna run dev --stream",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "docker:build": "docker image build -t vueexpresstodos:latest -f ./docker/Dockerfile ."
   }
 }

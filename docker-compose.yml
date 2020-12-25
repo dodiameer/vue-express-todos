@@ -11,4 +11,11 @@ services:
       - ./mongo_data:/data/db
     ports:
       - "27017-27019:27017-27019"
+  app:
+    image: "vueexpresstodos:latest"
+    restart: "always"
+    ports: 
+      - 3001:3001
+    environment: 
+      PORT: "3001"
     
