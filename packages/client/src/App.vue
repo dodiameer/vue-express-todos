@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const common = require("@monorepo/common")
+const common = require("@vue-express-todos/common")
 export default {
   name: 'App',
   created() {
