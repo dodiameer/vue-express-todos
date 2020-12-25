@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/client",
+  "name": "@vue-express-todos/client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
