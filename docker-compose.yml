@@ -10,7 +10,9 @@ services:
     ports:
       - 27017:27017
   app:
-    image: "vueexpresstodos:latest"
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile 
     restart: "always"
     ports: 
       - 4001:4001
