@@ -3,16 +3,18 @@
     <header id="app-header">
       <h1>Todo app</h1>
     </header>
-    <greeting />
+    <div class="container">
+      <todo-list />
+    </div>
   </div>  
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import Greeting from "./components/Greeting.vue"
+import TodoList from "./components/TodoList.vue"
 
 @Component({
   components: {
-    Greeting
+    TodoList
   }
 })
 export default class App extends Vue {}
@@ -48,5 +50,10 @@ body {
   justify-content: center;
   background: var(--primary);
   color: var(--accent)
+}
+</style>
+<style scoped>
+.container {
+  padding: 2rem;
 }
 </style>
